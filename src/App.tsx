@@ -30,7 +30,7 @@ function App() {
       <Header>
         <div className="logo" />
         <Menu
-          theme="dark"
+          theme="light"
           mode="horizontal"
           defaultSelectedKeys={["1"]}
           items={menuItems}
@@ -38,7 +38,7 @@ function App() {
           onClick={({ key }) => {
             setActiveNavKey(key);
             navigate(key);
-          }} // todo: route this
+          }}
         ></Menu>
       </Header>
       <Content style={{ padding: "0 50px" }}>

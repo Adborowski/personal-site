@@ -20,3 +20,19 @@ html {
   float: right;
   margin: 16px 0 16px 24px;
 }
+
+.ant-layout-header {
+  background: white !important;
+}
+
+.ant-menu-item-selected {
+  background-color: #1890ff;
+}
+
+.ant-menu-item-selected span {
+  color: white;
+}
+
+.site-layout-content {
+  min-height: unset;
+}
