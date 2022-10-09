@@ -13,24 +13,8 @@ html {
   background: white !important;
 }
 
-.ant-menu-item-selected {
-  background-color: #1890ff;
-}
-
-.ant-menu-item-selected span {
-  color: white;
-}
-.ant-menu-item-selected:hover {
-  color: red;
-}
-
 .site-layout-content {
   min-height: unset;
-}
-
-.ant-menu-horizontal > .ant-menu-item:hover,
-.ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
-  background-color: #f0f0f0 !important;
 }
 
 .ant-layout.layout {
@@ -46,6 +30,11 @@ span.ant-breadcrumb-separator {
 
 span.ant-breadcrumb-separator {
   font-weight: 600;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:after {
+  left: 0px !important;
+  right: 0px !important;
 }
 
 @keyframes gradient {
