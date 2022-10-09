@@ -20,9 +20,17 @@ html {
 .ant-menu-item-selected span {
   color: white;
 }
+.ant-menu-item-selected:hover {
+  color: red;
+}
 
 .site-layout-content {
   min-height: unset;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover,
+.ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
+  background-color: #f0f0f0 !important;
 }
 
 .ant-layout.layout {
@@ -31,7 +39,6 @@ html {
   animation: gradient 15s ease-in-out infinite;
   height: 100vh;
 }
-
 .ant-breadcrumb-link,
 span.ant-breadcrumb-separator {
   color: white;

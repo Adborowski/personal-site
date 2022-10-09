@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 import Projects from "./routes/projects";
+import About from "./routes/about";
+import Contact from "./routes/contact";
+
 import SiteHeader from "./SiteHeader";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
@@ -11,9 +14,11 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <BrowserRouter>
       <SiteHeader />
       <Routes>
-        <Route path="home" element={<App />}></Route>
         <Route path="/" element={<App />}></Route>
+        <Route path="home" element={<App />}></Route>
         <Route path="projects" element={<Projects />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
