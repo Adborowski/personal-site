@@ -27,20 +27,6 @@ function App() {
 
   return (
     <Layout className="layout">
-      <Header>
-        <div className="logo" />
-        <Menu
-          theme="light"
-          mode="horizontal"
-          defaultSelectedKeys={["1"]}
-          items={menuItems}
-          selectedKeys={[activeNavKey]}
-          onClick={({ key }) => {
-            setActiveNavKey(key);
-            navigate(key);
-          }}
-        ></Menu>
-      </Header>
       <Content style={{ padding: "0 50px" }}>
         <Breadcrumb style={{ margin: "16px 0" }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
