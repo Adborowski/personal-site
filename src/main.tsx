@@ -7,12 +7,12 @@ import Projects from "./routes/projects";
 import About from "./routes/about";
 import Contact from "./routes/contact";
 
-import SiteHeader from "./SiteHeader";
+import Header from "./Header";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
-      <SiteHeader />
+      <Header />
       <Routes>
         <Route path="/" element={<App />}></Route>
         <Route path="home" element={<App />}></Route>
