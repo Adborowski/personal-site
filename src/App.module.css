@@ -32,6 +32,12 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 :root {
@@ -47,17 +53,6 @@ html {
   height: 100vh;
 }
 
-/* 
-  #980000, 	(152,0,0)
-	#984500, 	(152,69,0)
-	#a77f03, 	(167,127,3)
-	#0c8900, 	(12,137,0)
-	#004b83, 
-  */
-
-.header {
-}
-
 .footer {
   position: absolute;
   width: 100%;
@@ -71,14 +66,24 @@ html {
   width: var(--mobile-menu-width);
   position: absolute;
   top: 0;
-
-  /* on closed */
-  left: calc(var(--mobile-menu-width) * (-1));
+  left: calc(var(--mobile-menu-width) * (-1)); /* on closed */
   transition: 0.3s ease;
-
   background: rgba(255, 255, 255, 0.21);
   backdrop-filter: blur(5.1px);
   -webkit-backdrop-filter: blur(5.1px);
+  padding-top: 42px;
+  padding-left: 42px;
+}
+
+/* mobile menu */
+.menu .menuItem {
+  display: block;
+  color: white;
+  font-family: var(--font-main);
+  font-size: 36px;
+  text-decoration: none;
+  font-weight: 900;
+  margin-bottom: 18px;
 }
 
 @media screen and (min-width: 500px) {
@@ -96,17 +101,6 @@ html {
 
 .isOpen {
   left: 0;
-}
-
-/* mobile menu */
-.menu .menuItem {
-  display: block;
-  padding: 18px;
-  color: white;
-  font-family: var(--font-main);
-  font-size: 24px;
-  text-decoration: none;
-  font-weight: 900;
 }
 
 .desktopMenu {

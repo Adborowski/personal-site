@@ -23,9 +23,3 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
-{
-  /* <Route exact path="/">
-    <Redirect to="/home" />
-</Route> */
-}
