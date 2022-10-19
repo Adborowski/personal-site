@@ -9,7 +9,6 @@ const SiteHeader = () => {
   const MenuItems: any = () => {
     const items = [
       { label: "Home", key: "home" },
-      // { label: "About", key: "about" },
       { label: "Projects", key: "projects" },
       { label: "Contact", key: "contact" },
     ];
