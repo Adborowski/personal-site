@@ -1,6 +1,6 @@
 import { Link, useParams, useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
-import styles from "./App.module.css";
+import styles from "./Header.module.css";
 
 import { Transition } from "react-transition-group";
 import { useRef } from "react";

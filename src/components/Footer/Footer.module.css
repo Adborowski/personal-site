@@ -1,0 +1,10 @@
+.Footer {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  text-align: center;
+  height: var(--desktop-menu-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -2,7 +2,7 @@ import { Link, useParams, useNavigate, useLocation } from "react-router-dom";
 import { Breadcrumb, Layout, Menu } from "antd";
 import { useState } from "react";
 import styles from "./App.module.css";
-import Footer from "./Footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   let navigate = useNavigate();
@@ -13,8 +13,10 @@ function App() {
 
   return (
     <div className={styles.home}>
-      <h1>Let's build something!</h1>
-      <h2>I am adam</h2>
+      <h1>
+        In my brain I rearrange the letters on the page to spell your name
+      </h1>
+      <h2>Courtney Barnett</h2>
     </div>
   );
 }

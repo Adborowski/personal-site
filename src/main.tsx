@@ -7,9 +7,9 @@ import Projects from "./routes/projects";
 import About from "./routes/about";
 import Contact from "./routes/contact";
 import styles from "./App.module.css";
-import Footer from "./Footer";
+import Footer from "./components/Footer/Footer";
 
-import Header from "./Header";
+import Header from "./components/Header/Header";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
