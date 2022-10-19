@@ -28,12 +28,19 @@ html {
   background-color: #242424;
 }
 
+body {
+  background: linear-gradient(-45deg, #980000, #004b83);
+  background-size: 300% 300%;
+  animation: gradient 10s ease-in-out infinite;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  font-family: var(--font-main);
 }
 
 *::-webkit-scrollbar {
@@ -43,25 +50,66 @@ html {
 :root {
   --font-main: "Uncut";
   --mobile-menu-width: 100%;
+  --desktop-menu-height: 48px;
   --breakpoint-1: 500px;
 }
 
-.main {
-  background: linear-gradient(-45deg, #980000, #004b83);
-  background-size: 300% 300%;
-  animation: gradient 10s ease-in-out infinite;
-  height: 100vh;
+h1 {
+  font-family: var(--font-main);
+  font-weight: 700;
 }
 
-.footer {
+h2 {
+  font-family: var(--font-main);
+  font-weight: 500;
+}
+
+.main {
+  height: 100vh;
+  padding: 6px 12px;
+}
+
+.brandBar {
+  height: var(--desktop-menu-height);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px dotted white;
+}
+
+.brandBar .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 12px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.brandBar .logo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brandBar .logo img {
+  height: 60%;
+}
+
+.Footer {
   position: absolute;
   width: 100%;
   top: 100%;
+  text-align: center;
+  height: var(--desktop-menu-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* mobile first menu */
 .menu {
-  background-color: white;
   height: 100vh;
   width: var(--mobile-menu-width);
   position: absolute;
@@ -86,16 +134,20 @@ html {
   margin-bottom: 18px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
   .menu,
   .burger {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .desktopMenu {
     display: none !important;
+  }
+
+  .header .logo {
+    text-align: center;
   }
 }
 
@@ -107,13 +159,12 @@ html {
   background: rgba(255, 255, 255, 0.21);
   backdrop-filter: blur(5.1px);
   -webkit-backdrop-filter: blur(5.1px);
-  height: 48px;
+  height: var(--desktop-menu-height);
   width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: absolute;
 }
 
 .desktopMenu .menuItem {
@@ -153,7 +204,8 @@ html {
   display: block;
   text-align: center;
   font-weight: 800;
-  font-size: 35px;
+  font-size: 32px;
+  padding-bottom: 3px;
 }
 
 @keyframes gradient {

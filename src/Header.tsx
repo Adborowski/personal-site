@@ -42,9 +42,16 @@ const SiteHeader = () => {
 
   return (
     <div className={styles.header}>
+      <div className={styles.brandBar}>
+        <div className={styles.logo}>
+          <img src="./logo.svg" />
+        </div>
+        <div className={styles.name}>Adam Borowski</div>
+      </div>
       <div onClick={onBurgerClick} className={styles.burger}>
         <span>≡</span>
       </div>
+
       {/* mobile menu */}
       <div className={`${styles.menu} ${isNavOpen ? styles.isOpen : ""}`}>
         <MenuItems />
