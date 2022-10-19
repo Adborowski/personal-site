@@ -83,8 +83,7 @@
 
 .desktopMenu .menuItem {
   /* border: 1px solid red; */
-  margin: 0px 6px;
-  padding: 0px 18px;
+  padding: 0px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,6 +92,11 @@
   font-weight: 800;
   font-family: var(--font-main);
   transition: 0.3s all ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+
+.menuItem:global(.active) {
+  border-bottom: 1px solid white;
 }
 
 .desktopMenu .menuItem:hover {

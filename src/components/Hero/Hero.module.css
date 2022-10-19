@@ -1,0 +1,9 @@
+.Hero {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 32px;
+}
+
+.Hero h1 {
+  font-size: 60px;
+}

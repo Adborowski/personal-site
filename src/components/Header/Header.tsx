@@ -1,4 +1,4 @@
-import { Link, useParams, useNavigate, useLocation } from "react-router-dom";
+import { NavLink, useParams, useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 import styles from "./Header.module.css";
 
@@ -9,21 +9,21 @@ const SiteHeader = () => {
   const MenuItems: any = () => {
     const items = [
       { label: "Home", key: "home" },
-      { label: "About", key: "about" },
+      // { label: "About", key: "about" },
       { label: "Projects", key: "projects" },
       { label: "Contact", key: "contact" },
     ];
 
     const menuItems = items.map((item) => {
       return (
-        <Link
+        <NavLink
           key={item.label}
           onClick={onLinkClick}
           to={item.key}
           className={styles.menuItem}
         >
           {item.label}
-        </Link>
+        </NavLink>
       );
     });
 
