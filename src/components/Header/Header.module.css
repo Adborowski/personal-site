@@ -12,7 +12,8 @@
   justify-content: center;
   margin-left: 12px;
   font-size: 18px;
-  font-weight: 900;
+  font-family: var(--font-display);
+  font-weight: 600;
 }
 
 .brandBar .logo {
@@ -35,8 +36,8 @@
   left: calc(var(--mobile-menu-width) * (-1)); /* on closed */
   transition: 0.3s ease;
   background: rgba(255, 255, 255, 0.21);
-  backdrop-filter: blur(5.1px);
-  -webkit-backdrop-filter: blur(5.1px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   padding-top: 42px;
   padding-left: 42px;
   z-index: 400;

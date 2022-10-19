@@ -6,4 +6,32 @@
 
 .Hero h1 {
   font-size: 60px;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
+.Hero h2 {
+  margin-top: 18px;
+  font-weight: 400;
+}
+
+.Hero .highlight {
+  font-weight: 800;
+}
+
+.heroLinks {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+}
+
+.heroLinks .heroLink {
+  margin-right: 18px;
+  background-color: yellow;
+  color: black;
+  padding: 18px;
+  border-radius: 60px;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 500;
 }
