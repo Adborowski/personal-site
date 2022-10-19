@@ -6,12 +6,29 @@ import { Transition } from "react-transition-group";
 import { useRef } from "react";
 
 const SiteHeader = () => {
-  const menuItems = [
-    { label: "Home", key: "home" },
-    { label: "About", key: "about" },
-    { label: "Projects", key: "projects" },
-    { label: "Contact", key: "contact" },
-  ];
+  const MenuItems: any = () => {
+    const items = [
+      { label: "Home", key: "home" },
+      { label: "About", key: "about" },
+      { label: "Projects", key: "projects" },
+      { label: "Contact", key: "contact" },
+    ];
+
+    const menuItems = items.map((item) => {
+      return (
+        <Link
+          key={item.label}
+          onClick={onLinkClick}
+          to={item.key}
+          className={styles.menuItem}
+        >
+          {item.label}
+        </Link>
+      );
+    });
+
+    return menuItems;
+  };
 
   const onLinkClick = () => {
     setIsNavOpen(false);
@@ -32,19 +49,12 @@ const SiteHeader = () => {
       <div onClick={onBurgerClick} className={styles.burger}>
         <span>≡</span>
       </div>
+      {/* mobile menu */}
       <div className={`${styles.menu} ${isNavOpen ? styles.isOpen : ""}`}>
-        {menuItems.map((item) => {
-          return (
-            <Link
-              onClick={onLinkClick}
-              to={item.key}
-              className={styles.menuItem}
-            >
-              {item.label}
-            </Link>
-          );
-        })}
+        <MenuItems />
       </div>
+      {/* desktop menu */}
+      <div className={styles.desktopMenu}></div>
     </div>
   );
 };
