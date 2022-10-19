@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "Nabla";
+  src: url("/Nabla.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Uncut";
+  src: url("/Uncut.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Heming";
+  src: url("/Heming.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oceanus";
+  src: url("/Oceanus.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Suit";
+  src: url("/Suit.ttf") format("truetype");
+}
+
 html {
   color: white;
   background-color: #242424;
@@ -10,17 +35,25 @@ html {
 }
 
 :root {
-  --font-main: "Helvetica";
+  --font-main: "Uncut";
   --mobile-menu-width: 100%;
   --breakpoint-1: 500px;
 }
 
 .main {
-  background: linear-gradient(-45deg, #3ae7f6, #53f5c4, #de75fb, #fc9898);
-  background-size: 800% 800%;
-  animation: gradient 15s ease-in-out infinite;
+  background: linear-gradient(-45deg, #980000, #004b83);
+  background-size: 300% 300%;
+  animation: gradient 10s ease-in-out infinite;
   height: 100vh;
 }
+
+/* 
+  #980000, 	(152,0,0)
+	#984500, 	(152,69,0)
+	#a77f03, 	(167,127,3)
+	#0c8900, 	(12,137,0)
+	#004b83, 
+  */
 
 .header {
 }
@@ -41,7 +74,7 @@ html {
 
   /* on closed */
   left: calc(var(--mobile-menu-width) * (-1));
-  transition: 0.3s all ease;
+  transition: 0.3s ease;
 
   background: rgba(255, 255, 255, 0.21);
   backdrop-filter: blur(5.1px);
@@ -73,7 +106,7 @@ html {
   font-family: var(--font-main);
   font-size: 24px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .desktopMenu {
@@ -100,6 +133,13 @@ html {
   color: white;
   font-weight: 800;
   font-family: var(--font-main);
+  transition: 0.3s all ease-in-out;
+}
+
+.desktopMenu .menuItem:hover {
+  background: rgba(255, 255, 255, 0.21);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
 }
 
 .burger {
