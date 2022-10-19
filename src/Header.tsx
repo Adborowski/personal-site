@@ -38,10 +38,6 @@ const SiteHeader = () => {
     setIsNavOpen(!isNavOpen);
   };
 
-  let navigate = useNavigate();
-  let location = useLocation();
-  let params = useParams();
-
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
@@ -54,7 +50,9 @@ const SiteHeader = () => {
         <MenuItems />
       </div>
       {/* desktop menu */}
-      <div className={styles.desktopMenu}></div>
+      <div className={styles.desktopMenu}>
+        <MenuItems />
+      </div>
     </div>
   );
 };
