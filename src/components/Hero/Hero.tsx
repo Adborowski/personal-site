@@ -27,7 +27,7 @@ const Hero = () => {
       </h1>
       <h2>
         I have the skills to get your project from <br />
-        idea to production faster than you think.
+        idea to production faster than you think!
       </h2>
       <div className={styles.heroLinks}>
         <HeroLinks />
