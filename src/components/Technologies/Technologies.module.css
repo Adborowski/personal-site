@@ -1,0 +1,15 @@
+.Technologies {
+  margin-top: 18px;
+}
+
+.Technologies h2 {
+  margin-bottom: 12px;
+}
+
+.tech {
+  display: inline-block;
+  padding: 6px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  border-radius: 6px;
+}

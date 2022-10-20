@@ -1,5 +1,4 @@
 .Hero {
-  max-width: 500px;
   margin: auto;
   margin-top: 32px;
 }
@@ -34,4 +33,19 @@
   text-decoration: none;
   font-family: var(--font-display);
   font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+  .Hero h1 {
+    font-size: 36px;
+  }
+
+  .Hero h2 {
+    font-size: 18px;
+  }
+
+  .heroLinks .heroLink {
+    font-size: 14px;
+    margin-right: 6px;
+  }
 }

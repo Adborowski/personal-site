@@ -31,7 +31,7 @@ html {
 body {
   background: linear-gradient(-45deg, #980000, #004b83);
   background-size: 300% 300%;
-  animation: gradient 10s ease-in-out infinite;
+  animation: gradient 20s ease-in-out infinite;
 }
 
 * {
@@ -73,6 +73,17 @@ h2 {
 .main {
   height: 100vh;
   position: relative;
+}
+
+.home {
+  max-width: 500px;
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .home {
+    padding: 0px 18px;
+  }
 }
 
 @keyframes gradient {
