@@ -41,12 +41,12 @@ const SiteHeader = () => {
 
   return (
     <div className={styles.header}>
-      <div className={styles.brandBar}>
+      <NavLink to={"home"} className={styles.brandBar}>
         <div className={styles.logo}>
           <img src="./logo.svg" />
         </div>
         <div className={styles.name}>Adam Borowski</div>
-      </div>
+      </NavLink>
       <div onClick={onBurgerClick} className={styles.burger}>
         <span>≡</span>
       </div>
