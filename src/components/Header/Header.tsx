@@ -8,7 +8,7 @@ import { useRef } from "react";
 const SiteHeader = () => {
   const MenuItems: any = () => {
     const items = [
-      { label: "Home", key: "home" },
+      { label: "Home", key: "/" },
       { label: "Projects", key: "projects" },
       { label: "Contact", key: "contact" },
     ];
@@ -41,7 +41,7 @@ const SiteHeader = () => {
 
   return (
     <div className={styles.header}>
-      <NavLink to={"home"} className={styles.brandBar}>
+      <NavLink to={"/"} className={styles.brandBar}>
         <div className={styles.logo}>
           <img src="./logo.svg" />
         </div>
