@@ -32,6 +32,7 @@ body {
   background: linear-gradient(-45deg, #980000, #004b83);
   background-size: 300% 300%;
   animation: gradient 20s ease-in-out infinite;
+  position: relative;
 }
 
 * {
@@ -70,14 +71,16 @@ h2 {
   font-weight: 500;
 }
 
-.main {
+:global(.main) {
+  max-width: 500px;
+  margin: auto;
   height: 100vh;
   position: relative;
 }
 
-.home {
-  max-width: 500px;
-  margin: auto;
+section h1 {
+  font-size: 36px;
+  margin-top: 12px;
 }
 
 @media screen and (max-width: 500px) {

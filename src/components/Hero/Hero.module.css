@@ -3,10 +3,11 @@
   margin-top: 32px;
 }
 
-.Hero h1 {
+:global(.main) .Hero h1 {
   font-size: 60px;
   font-weight: 400;
   line-height: 1.25em;
+  color: white;
 }
 
 .Hero h2 {

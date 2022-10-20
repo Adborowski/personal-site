@@ -16,11 +16,29 @@ const Projects = () => {
         stack: ["Javascript", "JQuery", "SCSS", "SQL"],
       },
     ];
+
+    const projectsDisplay = projectsList.map((proj) => {
+      return (
+        <div key={proj.label} className={styles.project}>
+          <div
+            style={{ backgroundImage: `url("${proj.image}")` }}
+            className={styles.image}
+          ></div>
+          <section>
+            <div className={styles.name}>{proj.label}</div>
+            <div className={styles.description}>{proj.description}</div>
+          </section>
+        </div>
+      );
+    });
+
+    return projectsDisplay;
   };
   return (
-    <div className={styles.Projects}>
-      <h1>Projects</h1>
-      <ProjectsList />
+    <div className={"main"}>
+      <div className={styles.ProjectsList}>
+        <ProjectsList />
+      </div>
     </div>
   );
 };

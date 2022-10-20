@@ -4,7 +4,7 @@ import Technologies from "./components/Technologies/Technologies";
 
 function App() {
   return (
-    <div className={styles.home}>
+    <div className={"main"}>
       <Hero />
       <Technologies />
     </div>
