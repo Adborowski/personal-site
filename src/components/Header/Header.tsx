@@ -8,14 +8,15 @@ import { useRef } from "react";
 const SiteHeader = () => {
   const MenuItems: any = () => {
     const items = [
-      { label: "Home", key: "/" },
-      { label: "Projects", key: "projects" },
-      { label: "Contact", key: "contact" },
+      { label: "Home", key: "/", isEnd: true },
+      { label: "Projects", key: "projects", isEnd: false },
+      { label: "Contact", key: "contact", isEnd: false },
     ];
 
     const menuItems = items.map((item) => {
       return (
         <NavLink
+          end={item.isEnd}
           key={item.label}
           onClick={onLinkClick}
           to={item.key}

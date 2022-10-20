@@ -31,6 +31,8 @@ const Technologies = () => {
   const learningGoals = [
     { label: "React Native", type: "code" },
     { label: "Next.js", type: "code" },
+    { label: "Headless CMS", type: "code" },
+    { label: "Testing Frameworks", type: "code" },
   ];
 
   const techTypes: any = {
