@@ -31,9 +31,9 @@
 
 /* mobile first menu */
 .menu {
-  height: 100vh;
+  height: 100%;
   width: var(--mobile-menu-width);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: calc(var(--mobile-menu-width) * (-1)); /* on closed */
   transition: 0.3s ease;

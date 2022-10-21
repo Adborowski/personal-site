@@ -74,7 +74,6 @@ h2 {
 :global(.main) {
   max-width: 500px;
   margin: auto;
-  height: 100vh;
   position: relative;
 }
 
@@ -84,8 +83,9 @@ section h1 {
 }
 
 @media screen and (max-width: 500px) {
-  .home {
-    padding: 0px 18px;
+  :global(.main) {
+    padding: 0px 12px;
+    min-height: 100vh;
   }
 }
 

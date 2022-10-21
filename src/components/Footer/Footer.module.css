@@ -1,5 +1,6 @@
 .Footer {
-  position: absolute;
+  position: relative;
+  margin-top: 18px;
   width: 100%;
   text-align: center;
   height: var(--desktop-menu-height);

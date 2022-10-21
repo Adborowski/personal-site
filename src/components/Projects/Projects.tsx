@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Projects.module.css";
 
 const Projects = () => {
@@ -7,13 +8,41 @@ const Projects = () => {
         label: "Echo",
         image: "sample.jpeg",
         description: "Typewriter-inspired experimental drawing tool",
-        stack: ["Javascript", "HTML", "CSS"],
+        technologies: [
+          { label: "Javascript", type: "Code" },
+          { label: "HTML", type: "Code" },
+        ],
+        route: "echo",
       },
       {
         label: "Topdog",
         image: "sample.jpeg",
-        description: "Lorem Ipsum Dolor sit Amet Consectatum",
-        stack: ["Javascript", "JQuery", "SCSS", "SQL"],
+        description: "Matchmaking app for aspiring dog owners and shelters",
+        technologies: [
+          { label: "Javascript", type: "Code" },
+          { label: "HTML", type: "Code" },
+        ],
+        route: "topdog",
+      },
+      {
+        label: "Ivy Ukraine",
+        image: "sample.jpeg",
+        description: "EduTech app supporting Ukrainian refugees in Poland",
+        technologies: [
+          { label: "Javascript", type: "Code" },
+          { label: "HTML", type: "Code" },
+        ],
+        route: "ivyukraine",
+      },
+      {
+        label: "Central Rental",
+        image: "sample.jpeg",
+        description: "Booking site for short-term apartment rentals",
+        technologies: [
+          { label: "Javascript", type: "Code" },
+          { label: "HTML", type: "Code" },
+        ],
+        route: "centralrental",
       },
     ];
 
@@ -27,6 +56,9 @@ const Projects = () => {
           <section>
             <div className={styles.name}>{proj.label}</div>
             <div className={styles.description}>{proj.description}</div>
+            <NavLink className={styles.button} to={proj.route}>
+              More
+            </NavLink>
           </section>
         </div>
       );
