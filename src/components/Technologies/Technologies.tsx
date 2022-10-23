@@ -9,6 +9,7 @@ const Technologies = () => {
     { label: "CSS", type: "code" },
     { label: "SCSS", type: "code" },
     { label: "CSS Modules", type: "code" },
+    { label: "Responsive Web Design", type: "code" },
     { label: "Gulp", type: "code" },
     { label: "Webpack", type: "code" },
     { label: "GIT CLI", type: "code" },

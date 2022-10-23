@@ -44,6 +44,26 @@ const Projects = () => {
         ],
         route: "centralrental",
       },
+      {
+        label: "DI-Map",
+        image: "sample.jpeg",
+        description: "Gig economy app prototype for generalized work",
+        technologies: [
+          { label: "Javascript", type: "Code" },
+          { label: "HTML", type: "Code" },
+        ],
+        route: "centralrental",
+      },
+      {
+        label: "Orsted Academy",
+        image: "sample.jpeg",
+        description: "Figma-based concept for an internal education app UI",
+        technologies: [
+          { label: "Javascript", type: "Code" },
+          { label: "HTML", type: "Code" },
+        ],
+        route: "centralrental",
+      },
     ];
 
     const projectsDisplay = projectsList.map((proj) => {
