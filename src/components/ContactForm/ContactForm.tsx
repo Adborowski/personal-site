@@ -27,13 +27,23 @@ export const ContactForm = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="from_name" />
-      <label>Email</label>
-      <input type="email" name="reply_to" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <div className={styles.formField}>
+        <label>Name</label>
+        <input type="text" name="from_name" />
+      </div>
+      <div className={styles.formField}>
+        <label>Email</label>
+        <input type="email" name="reply_to" />
+      </div>
+
+      <div className={styles.formField}>
+        <label>Message</label>
+        <textarea name="message" />
+      </div>
+
+      <div className={styles.controls}>
+        <input className={"button"} type="submit" value="Send" />
+      </div>
     </form>
   );
 };

@@ -10,7 +10,7 @@ const Hero = () => {
 
     const displayLinks = links.map((link) => {
       return (
-        <Link to={link.key} key={link.label} className={styles.heroLink}>
+        <Link to={link.key} key={link.label} className={"button"}>
           {link.label}
         </Link>
       );

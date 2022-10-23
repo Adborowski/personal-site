@@ -59,6 +59,20 @@ body {
   --mobile-menu-width: 100%;
   --desktop-menu-height: 48px;
   --breakpoint-1: 500px;
+  --color-button: #ffff79;
+}
+
+:global(.button) {
+  margin-right: 3px;
+  background-color: var(--color-button);
+  color: black;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  border: 0;
 }
 
 h1 {
