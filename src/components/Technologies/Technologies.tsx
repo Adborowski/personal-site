@@ -19,6 +19,7 @@ const Technologies = () => {
     { label: "Wordpress", type: "code" },
     { label: "WooCommerce", type: "code" },
     { label: "SQL", type: "code" },
+    { label: "CRON", type: "code" },
     { label: "Adobe Illustrator", type: "design" },
     { label: "Adobe Photoshop", type: "design" },
     { label: "Adobe After Effects", type: "design" },
