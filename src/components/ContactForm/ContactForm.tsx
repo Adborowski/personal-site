@@ -10,6 +10,7 @@ export const ContactForm = () => {
   const sendEmail = (e: any) => {
     e.preventDefault();
     setIsSending(true);
+    setIsSent(false);
     emailjs
       .sendForm(
         "service_qou53ru",
@@ -19,7 +20,6 @@ export const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setIsSending(false);
           setIsSent(true);
           e.target.reset();

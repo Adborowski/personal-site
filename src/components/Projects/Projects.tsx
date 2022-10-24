@@ -35,9 +35,9 @@ const Projects = () => {
         route: "ivyukraine",
       },
       {
-        label: "Central Rental",
+        label: "Osiris",
         image: "sample.jpeg",
-        description: "Booking site for short-term apartment rentals",
+        description: "Cybersecurity dashboard for secure data backup",
         technologies: [
           { label: "Javascript", type: "Code" },
           { label: "HTML", type: "Code" },
