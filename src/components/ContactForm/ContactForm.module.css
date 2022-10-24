@@ -1,9 +1,53 @@
 .formField {
-  /* border: 1px solid red; */
   margin-bottom: 12px;
   display: grid;
 }
 
+.formField label {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-display);
+}
+
 .formField:first-of-type {
   margin-top: 18px;
+}
+
+.textInput {
+  padding: 6px;
+  margin-top: 6px;
+  background: rgba(255, 255, 255, 0.21);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: white;
+  border: 1px solid transparent;
+  font-size: 16px;
+}
+
+.textInput:focus-visible {
+  outline: none;
+  border: 1px solid white;
+}
+
+.controls {
+  margin: auto;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+
+.controls input {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 18px;
+}
+
+.feedback span {
+  display: block;
 }

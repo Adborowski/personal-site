@@ -40,6 +40,10 @@
   background-size: cover;
 }
 
+.project .description {
+  font-size: 16px;
+}
+
 .project .button {
   /* position: absolute; */
   bottom: 12px;
