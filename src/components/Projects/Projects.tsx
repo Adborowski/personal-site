@@ -16,7 +16,7 @@ const Projects = () => {
       },
       {
         label: "Topdog",
-        image: "topdog-5.png",
+        image: "topdog.png",
         description: "Matchmaking app for aspiring dog owners and shelters",
         technologies: [
           { label: "Javascript", type: "Code" },
@@ -36,7 +36,7 @@ const Projects = () => {
       },
       {
         label: "Osiris",
-        image: "sample.jpeg",
+        image: "osiris.png",
         description: "Cybersecurity dashboard for secure data backup",
         technologies: [
           { label: "Javascript", type: "Code" },
@@ -46,7 +46,7 @@ const Projects = () => {
       },
       {
         label: "DI-Map",
-        image: "sample.jpeg",
+        image: "map.png",
         description: "Gig economy app prototype for generalized work",
         technologies: [
           { label: "Javascript", type: "Code" },
@@ -56,7 +56,7 @@ const Projects = () => {
       },
       {
         label: "Orsted Academy",
-        image: "sample.jpeg",
+        image: "oda.png",
         description: "Figma-based concept for an internal education app UI",
         technologies: [
           { label: "Javascript", type: "Code" },
