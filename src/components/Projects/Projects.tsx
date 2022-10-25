@@ -6,7 +6,7 @@ const Projects = () => {
     const projectsList = [
       {
         label: "Echo",
-        image: "sample.jpeg",
+        image: "echo.png",
         description: "Typewriter-inspired experimental drawing tool",
         technologies: [
           { label: "Javascript", type: "Code" },
@@ -16,7 +16,7 @@ const Projects = () => {
       },
       {
         label: "Topdog",
-        image: "sample.jpeg",
+        image: "topdog-5.png",
         description: "Matchmaking app for aspiring dog owners and shelters",
         technologies: [
           { label: "Javascript", type: "Code" },
@@ -26,7 +26,7 @@ const Projects = () => {
       },
       {
         label: "Ivy Ukraine",
-        image: "sample.jpeg",
+        image: "ivy.png",
         description: "EduTech app supporting Ukrainian refugees in Poland",
         technologies: [
           { label: "Javascript", type: "Code" },

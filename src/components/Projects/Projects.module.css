@@ -23,6 +23,13 @@
   background: rgba(255, 255, 255, 0.21);
   backdrop-filter: blur(5.1px);
   -webkit-backdrop-filter: blur(5.1px);
+  transition: 0.3s all ease-in-out;
+}
+
+.project:hover {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
 }
 
 .project section {
@@ -38,6 +45,7 @@
 .project .image {
   height: 150px;
   background-size: cover;
+  background-position: center;
 }
 
 .project .description {

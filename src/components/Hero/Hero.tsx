@@ -26,7 +26,7 @@ const Hero = () => {
         <span className={styles.highlight}>great?</span>
       </h1>
       <h2>
-        I have the skills to get your project from idea and pitch to production
+        I have the skills to get your project from idea and pitch to production,
         faster than you think.
       </h2>
       <div className={styles.heroLinks}>
