@@ -23,6 +23,36 @@
   src: url("/Suit.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Fraunces";
+  src: url("/Fraunces.woff2") format("woff2");
+  font-variation-settings: "SOFT" 375, "WONK" 88;
+}
+
+@font-face {
+  font-family: "Basteleur";
+  src: url("/Basteleur.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Seasons";
+  src: url("/Seasons.ttf") format("truetype");
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --font-main: "Uncut";
+  --font-display: "Basteleur";
+  --mobile-menu-width: 100%;
+  --desktop-menu-height: 48px;
+  --breakpoint-1: 500px;
+  --color-button: #ffff79;
+}
+
 html {
   color: white;
   background-color: #242424;
@@ -50,20 +80,6 @@ body {
   display: none;
 }
 
-:root {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  --font-main: "Uncut";
-  --font-display: "Suit";
-  --mobile-menu-width: 100%;
-  --desktop-menu-height: 48px;
-  --breakpoint-1: 500px;
-  --color-button: #ffff79;
-}
-
 :global(.button) {
   margin-right: 3px;
   background-color: var(--color-button);
@@ -71,7 +87,7 @@ body {
   padding: 18px;
   border-radius: 12px;
   text-decoration: none;
-  font-family: var(--font-display);
+  font-family: var(--font-main);
   font-weight: 700;
   font-size: 16px;
   border: 0;
@@ -93,6 +109,10 @@ h2 {
   position: relative;
 }
 
+:global(.main) h1 {
+  margin-top: 24px;
+}
+
 section h1 {
   font-size: 36px;
   margin-top: 12px;
@@ -101,6 +121,12 @@ section h1 {
 @media screen and (max-width: 500px) {
   :global(.main) {
     padding: 0px 12px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  :global(.main) {
+    max-width: 600px;
   }
 }
 

@@ -17,6 +17,7 @@
 
 .Hero .highlight {
   font-weight: 800;
+  font-family: var(--font-display);
 }
 
 .heroLinks {

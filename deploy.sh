@@ -2,6 +2,7 @@
 SWITCH="\033["
 NORMAL="${SWITCH}0m"
 GREEN="${SWITCH}1;32m"
+npm run build
 cd dist
 git add .
 git commit -m "Auto-deploy"

@@ -55,7 +55,7 @@ const Projects = () => {
         route: "centralrental",
       },
       {
-        label: "Orsted Academy",
+        label: "Ø Academy",
         image: "oda.png",
         description: "Figma-based concept for an internal education app UI",
         technologies: [
@@ -88,6 +88,7 @@ const Projects = () => {
   };
   return (
     <div className={"main"}>
+      <h1>Projects</h1>
       <div className={styles.ProjectsList}>
         <ProjectsList />
       </div>
