@@ -4,7 +4,8 @@
 
 .Technologies h2 {
   margin-bottom: 12px;
-  margin-top: 6px;
+  margin-top: 12px;
+  font-family: var(--font-display);
 }
 
 .tech {

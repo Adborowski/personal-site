@@ -59,7 +59,8 @@ html {
 }
 
 body {
-  background: linear-gradient(-45deg, #980000, #004b83);
+  /* background: linear-gradient(-45deg, #980000, #004b83); */
+  background: linear-gradient(-45deg, #44bf5c, #2c3e80, #581c1c);
   background-size: 300% 300%;
   animation: gradient 20s ease-in-out infinite;
   position: relative;
