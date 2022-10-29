@@ -8,12 +8,11 @@
 @media screen and (max-width: 500px) {
   .ProjectsList {
     grid-template-columns: 1fr;
-    margin-left: 18px;
-    margin-right: 18px;
-    grid-gap: 18px;
+    grid-gap: 12px;
   }
 
   .project section {
+    max-width: 300px;
   }
 }
 
@@ -53,13 +52,12 @@
 }
 
 .project .button {
-  /* position: absolute; */
   bottom: 12px;
   width: 90px;
   text-align: center;
   color: black;
   text-decoration: none;
-  background-color: white;
+  background-color: var(--color-button);
   padding: 6px 24px;
   display: inline-block;
   margin-top: 12px;

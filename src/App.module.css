@@ -121,7 +121,7 @@ section h1 {
 
 @media screen and (max-width: 500px) {
   :global(.main) {
-    padding: 0px 12px;
+    padding: 0px 18px;
   }
 }
 
