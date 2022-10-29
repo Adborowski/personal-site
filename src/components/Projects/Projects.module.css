@@ -51,15 +51,6 @@
   font-size: 16px;
 }
 
-.project .button {
-  bottom: 12px;
-  width: 90px;
-  text-align: center;
-  color: black;
-  text-decoration: none;
-  background-color: var(--color-button);
-  padding: 6px 24px;
-  display: inline-block;
+.controls {
   margin-top: 12px;
-  border-radius: 3px;
 }

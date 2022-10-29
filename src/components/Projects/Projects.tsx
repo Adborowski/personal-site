@@ -77,9 +77,11 @@ const Projects = () => {
           <section>
             <div className={styles.name}>{proj.label}</div>
             <div className={styles.description}>{proj.description}</div>
-            <NavLink className={styles.button} to={proj.route}>
-              More
-            </NavLink>
+            <div className={styles.controls}>
+              <NavLink className={"button"} to={proj.route}>
+                Read More
+              </NavLink>
+            </div>
           </section>
         </div>
       );
