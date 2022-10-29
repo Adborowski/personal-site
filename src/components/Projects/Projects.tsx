@@ -5,14 +5,14 @@ const Projects = () => {
   const ProjectsList: any = () => {
     const projectsList = [
       {
-        label: "Echo",
-        image: "echo.png",
-        description: "Typewriter-inspired experimental drawing tool",
+        label: "Ivy Ukraine",
+        image: "ivy.png",
+        description: "EduTech app supporting Ukrainian refugees in Poland",
         technologies: [
           { label: "Javascript", type: "Code" },
           { label: "HTML", type: "Code" },
         ],
-        route: "echo",
+        route: "ivyukraine",
       },
       {
         label: "Topdog",
@@ -25,19 +25,19 @@ const Projects = () => {
         route: "topdog",
       },
       {
-        label: "Ivy Ukraine",
-        image: "ivy.png",
-        description: "EduTech app supporting Ukrainian refugees in Poland",
+        label: "Osiris",
+        image: "osiris.png",
+        description: "Cybersecurity dashboard for secure data backup",
         technologies: [
           { label: "Javascript", type: "Code" },
           { label: "HTML", type: "Code" },
         ],
-        route: "ivyukraine",
+        route: "centralrental",
       },
       {
-        label: "Osiris",
-        image: "osiris.png",
-        description: "Cybersecurity dashboard for secure data backup",
+        label: "Ø Academy",
+        image: "oda.png",
+        description: "Figma-based concept for an internal education app UI",
         technologies: [
           { label: "Javascript", type: "Code" },
           { label: "HTML", type: "Code" },
@@ -54,15 +54,16 @@ const Projects = () => {
         ],
         route: "centralrental",
       },
+
       {
-        label: "Ø Academy",
-        image: "oda.png",
-        description: "Figma-based concept for an internal education app UI",
+        label: "Echo",
+        image: "echo.png",
+        description: "Typewriter-inspired experimental drawing tool",
         technologies: [
           { label: "Javascript", type: "Code" },
           { label: "HTML", type: "Code" },
         ],
-        route: "centralrental",
+        route: "echo",
       },
     ];
 

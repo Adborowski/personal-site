@@ -18,6 +18,7 @@
 .Hero .highlight {
   font-weight: 800;
   font-family: var(--font-display);
+  color: var(--color-button);
 }
 
 .heroLinks {
@@ -27,8 +28,8 @@
 }
 
 @media screen and (max-width: 500px) {
-  .Hero h1 {
-    font-size: 36px;
+  :global(.main) .Hero h1 {
+    font-size: 54px;
   }
 
   .Hero h2 {
