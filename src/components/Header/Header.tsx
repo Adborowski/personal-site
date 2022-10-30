@@ -44,7 +44,7 @@ const SiteHeader = () => {
     <div className={styles.header}>
       <NavLink to={"/"} className={styles.brandBar}>
         <div className={styles.logo}>
-          <img src="./logo.svg" />
+          <img src="/logo.svg" />
         </div>
         <div className={styles.name}>Adam Borowski</div>
       </NavLink>

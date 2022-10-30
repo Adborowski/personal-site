@@ -50,7 +50,8 @@
   --mobile-menu-width: 100%;
   --desktop-menu-height: 48px;
   --breakpoint-1: 500px;
-  --color-button: #f8f859;
+  --color-button: #fff04d;
+  --font-size-main: 16px;
 }
 
 html {
@@ -97,6 +98,10 @@ body {
   text-align: center;
 }
 
+:global(.controls) {
+  margin-top: 18px;
+}
+
 h1 {
   font-family: var(--font-display);
   font-weight: 700;
@@ -115,6 +120,11 @@ h2 {
 
 :global(.main) h1 {
   margin-top: 24px;
+}
+
+:global(.project-page) section {
+  margin-top: 12px;
+  max-width: 400px;
 }
 
 section h1 {
