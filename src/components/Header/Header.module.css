@@ -49,7 +49,7 @@
 .menu .menuItem {
   display: block;
   color: white;
-  font-family: var(--font-main);
+  font-family: var(--font-display);
   font-size: 36px;
   text-decoration: none;
   font-weight: 900;
