@@ -1,21 +1,33 @@
 import TagList from "../components/TagList/TagList";
 
 const IvyUkraine = () => {
-  const tagList = [
-    { label: "Headless CMS", type: "code" },
-    { label: "Testing Frameworks", type: "code" },
+  const techList = [
+    { label: "React", type: "code" },
+    { label: "CSS Modules", type: "code" },
+    { label: "Firebase", type: "code" },
+    { label: "Google Auth", type: "code" },
+    { label: "CSS Grid", type: "code" },
+    { label: "Responsive Web Design", type: "code" },
+    { label: "GIT CLI", type: "code" },
   ];
+
+  const businessList = [
+    { label: "Pro Bono", type: "business" },
+    { label: "Small Team", type: "business" },
+    { label: "Greenfield", type: "business" },
+  ];
+
   return (
     <div className={"main project-page"}>
       <h1>Ivy Ukraine</h1>
 
       <section>
-        The system supports four languages, and a custom two-level search
-        capability for high-precision queries including tutoring subject and
-        education level.
+        Supports four languages and a custom two-level search capability for
+        complex queries including tutoring subject and education level.
       </section>
+      <TagList tagList={businessList} />
 
-      <TagList tagList={tagList} />
+      <TagList tagList={techList} heading={"Technologies Used"} />
 
       <div className={"controls"}>
         <a target="_blank" href="https://ivyukraine.com" className={"button"}>

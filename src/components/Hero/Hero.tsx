@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import TagList from "../TagList/TagList";
 
 const Hero = () => {
-  const tagHead = "elo";
   const techList: Object[] = [
     { label: "React", type: "code" },
     { label: "Typescript", type: "code" },
@@ -69,7 +68,8 @@ const Hero = () => {
       <div className={styles.heroLinks}>
         <HeroLinks />
       </div>
-      <TagList tagList={techList} />
+      <TagList tagList={techList} heading={"My Powers"} />
+      <TagList tagList={learningGoals} heading={"My Learning Goals"} />
     </div>
   );
 };
