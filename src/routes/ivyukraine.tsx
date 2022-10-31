@@ -1,16 +1,13 @@
-import { Link } from "react-router-dom";
+import TagList from "../components/TagList/TagList";
 
 const IvyUkraine = () => {
+  const tagList = [
+    { label: "Headless CMS", type: "code" },
+    { label: "Testing Frameworks", type: "code" },
+  ];
   return (
     <div className={"main project-page"}>
       <h1>Ivy Ukraine</h1>
-      <section>
-        I have worked on this system pro-bono, in support of children of
-        Ukrainian refugees escaping the Russian invasion of 2022. I was the only
-        frontend developer.
-      </section>
-
-      <section></section>
 
       <section>
         The system supports four languages, and a custom two-level search
@@ -18,7 +15,8 @@ const IvyUkraine = () => {
         education level.
       </section>
 
-      <section>Production-grade release is planned for November '22.</section>
+      <TagList tagList={tagList} />
+
       <div className={"controls"}>
         <a target="_blank" href="https://ivyukraine.com" className={"button"}>
           Try it

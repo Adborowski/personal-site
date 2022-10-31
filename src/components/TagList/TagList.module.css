@@ -1,0 +1,18 @@
+.TagList {
+  margin-top: 18px;
+}
+
+.TagList h2 {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  font-family: var(--font-display);
+}
+
+.tag {
+  color: black;
+  display: inline-block;
+  padding: 6px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  border-radius: 6px;
+}
