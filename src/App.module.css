@@ -114,6 +114,7 @@ h2 {
 
 :global(.main) {
   max-width: 500px;
+  padding: 0px 12px;
   margin: auto;
   position: relative;
 }
@@ -131,25 +132,6 @@ h2 {
 
 :global(.project-page) h1 {
   text-align: center;
-}
-
-:global(.mockups) {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* overflow: scroll; */
-  /* margin: auto; */
-  margin: 18px 0px;
-  height: 500px;
-  /* grid-gap: 12px; */
-  /* border: 1px solid lime; */
-}
-
-:global(.mockup-frame) {
-  /* border: 1px solid red; */
-  height: 100%;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 section h1 {

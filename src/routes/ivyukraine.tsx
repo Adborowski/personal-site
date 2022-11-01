@@ -1,4 +1,5 @@
 import TagList from "../components/TagList/TagList";
+import Mockups from "../components/Mockups/Mockups";
 
 const IvyUkraine = () => {
   const techList = [
@@ -17,19 +18,12 @@ const IvyUkraine = () => {
     { label: "Greenfield", type: "business" },
   ];
 
+  const mockups = ["/mock/phone-ivy1.png", "/mock/phone-ivy3.png"];
+
   return (
     <div className={"main project-page"}>
       <h1>Ivy Ukraine</h1>
-      <div className={"mockups"}>
-        <div
-          className={"mockup-frame"}
-          style={{ backgroundImage: "url('/mock/phone-ivy1.png')" }}
-        ></div>
-        <div
-          className={"mockup-frame"}
-          style={{ backgroundImage: "url('/mock/phone-ivy3.png')" }}
-        ></div>
-      </div>
+      <Mockups urls={mockups} />
 
       <section>
         In 4 languages and with a custom two-layer search (subjects and levels),

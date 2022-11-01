@@ -1,0 +1,30 @@
+.mockups {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 18px 0px;
+  height: 500px;
+}
+
+.mockupFrame {
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+  .mockups {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mockups {
+    grid-template-columns: 1fr;
+    height: 500px;
+  }
+
+  .mockupFrame:nth-child(1) {
+    display: none;
+  }
+}
