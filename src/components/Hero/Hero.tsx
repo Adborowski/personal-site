@@ -47,7 +47,7 @@ const Hero = () => {
     const displayLinks = links.map((link) => {
       return (
         <Link to={link.key} key={link.label} className={"button"}>
-          {link.label}
+          <span>{link.label}</span>
         </Link>
       );
     });

@@ -34,6 +34,7 @@
 @media screen and (max-width: 500px) {
   :global(.main) .Hero h1 {
     font-size: 54px;
+    text-align: left;
   }
 
   .Hero h2 {

@@ -69,7 +69,7 @@ const Projects = () => {
 
     const projectsDisplay = projectsList.map((proj) => {
       return (
-        <div key={proj.label} className={styles.project}>
+        <NavLink to={proj.route} key={proj.label} className={styles.project}>
           <div
             style={{ backgroundImage: `url("${proj.image}")` }}
             className={styles.image}
@@ -77,13 +77,8 @@ const Projects = () => {
           <section>
             <div className={styles.name}>{proj.label}</div>
             <div className={styles.description}>{proj.description}</div>
-            <div className={styles.controls}>
-              <NavLink className={"button"} to={proj.route}>
-                Read More
-              </NavLink>
-            </div>
           </section>
-        </div>
+        </NavLink>
       );
     });
 

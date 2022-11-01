@@ -89,15 +89,25 @@ body {
   padding: 12px 18px;
   border-radius: 12px;
   text-decoration: none;
-  font-family: var(--font-main);
-  font-weight: 700;
-  font-size: 16px;
+  font-family: var(--font-display);
   border: 0;
   display: block;
-  max-width: 150px;
+  max-width: 180px;
   text-align: center;
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+:global(.button) span {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: var(--font-display);
+}
 :global(.controls) {
   margin-top: 18px;
 }
@@ -114,7 +124,7 @@ h2 {
 
 :global(.main) {
   max-width: 500px;
-  padding: 0px 12px;
+  padding: 0px 6px;
   margin: auto;
   position: relative;
 }
@@ -142,6 +152,10 @@ section h1 {
 @media screen and (max-width: 500px) {
   :global(.main) {
     padding: 0px 18px;
+  }
+
+  :global(.main) h1 {
+    text-align: center;
   }
 
   body {

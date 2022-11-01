@@ -1,7 +1,7 @@
 import TagList from "../components/TagList/TagList";
 import Mockups from "../components/Mockups/Mockups";
 
-const IvyUkraine = () => {
+const Topdog = () => {
   const techList = [
     { label: "React", type: "code" },
     { label: "CSS Modules", type: "code" },
@@ -42,4 +42,4 @@ const IvyUkraine = () => {
   );
 };
 
-export default IvyUkraine;
+export default Topdog;

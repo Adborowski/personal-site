@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Projects from "./components/Projects/Projects";
-import About from "./routes/about";
 import Contact from "./routes/contact";
 import styles from "./App.module.css";
 import Footer from "./components/Footer/Footer";
@@ -19,7 +18,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="/" element={<App />}></Route>
           <Route path="projects" element={<Projects />} />
           <Route path="projects/ivyukraine" element={<IvyUkraine />} />
-          <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
         <Footer />

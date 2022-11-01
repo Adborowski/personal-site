@@ -8,7 +8,10 @@
 @media screen and (max-width: 500px) {
   .ProjectsList {
     grid-template-columns: 1fr;
-    grid-gap: 12px;
+    grid-gap: 18px;
+    max-width: 250px;
+    margin: auto;
+    margin-top: 18px;
   }
 
   .project section {
@@ -23,6 +26,8 @@
   backdrop-filter: blur(5.1px);
   -webkit-backdrop-filter: blur(5.1px);
   transition: 0.3s all ease-in-out;
+  text-decoration: none;
+  color: white;
 }
 
 .project:hover {
@@ -39,6 +44,7 @@
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 6px;
+  font-family: var(--font-display);
 }
 
 .project .image {
