@@ -20,15 +20,24 @@ const IvyUkraine = () => {
   return (
     <div className={"main project-page"}>
       <h1>Ivy Ukraine</h1>
+      <div className={"mockups"}>
+        <div
+          className={"mockup-frame"}
+          style={{ backgroundImage: "url('/mock/phone-ivy1.png')" }}
+        ></div>
+        <div
+          className={"mockup-frame"}
+          style={{ backgroundImage: "url('/mock/phone-ivy3.png')" }}
+        ></div>
+      </div>
 
       <section>
-        Supports four languages and a custom two-level search capability for
-        complex queries including tutoring subject and education level.
+        In 4 languages and with a custom two-layer search (subjects and levels),
+        this app aims to help Ukrainian refugee children become comfortable in
+        foreign education systems.
       </section>
-      <TagList tagList={businessList} />
-
+      <TagList tagList={businessList} heading={"Project Type"} />
       <TagList tagList={techList} heading={"Technologies Used"} />
-
       <div className={"controls"}>
         <a target="_blank" href="https://ivyukraine.com" className={"button"}>
           Try it
