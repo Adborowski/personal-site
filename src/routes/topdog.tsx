@@ -3,32 +3,31 @@ import Mockups from "../components/Mockups/Mockups";
 
 const Topdog = () => {
   const techList = [
-    { label: "React", type: "code" },
-    { label: "CSS Modules", type: "code" },
-    { label: "Firebase", type: "code" },
-    { label: "Google Auth", type: "code" },
-    { label: "CSS Grid", type: "code" },
+    { label: "Javascript", type: "code" },
+    { label: "SCSS", type: "code" },
+    { label: "SQL", type: "code" },
+    { label: "HTML", type: "code" },
     { label: "Responsive Web Design", type: "code" },
     { label: "GIT CLI", type: "code" },
   ];
 
   const businessList = [
-    { label: "Pro Bono", type: "business" },
-    { label: "Small Team", type: "business" },
-    { label: "Greenfield", type: "business" },
+    { label: "School Project", type: "business" },
+    { label: "Solo", type: "business" },
+    { label: "Fullstack", type: "business" },
   ];
 
-  const mockups = ["/mock/phone-ivy1.png", "/mock/phone-ivy3.png"];
+  const mockups = ["/mock/phone-topdog2.png", "/mock/phone-topdog1.png"];
 
   return (
     <div className={"main project-page"}>
-      <h1>Ivy Ukraine</h1>
+      <h1>Topdog</h1>
       <Mockups urls={mockups} />
 
       <section>
-        With support for 4 languages and custom two-layer search (subjects and
-        levels), this app aims to help Ukrainian refugee children find tutors
-        and adapt to foreign education systems.
+        This app aims to rethink the way we adopt animals. Rather than letting
+        the user pick based on their own preferences, I use a lifestyle
+        questionnaire to find the perfect dog for them and their life.
       </section>
 
       <TagList tagList={businessList} heading={"Project Type"} />
