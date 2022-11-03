@@ -33,7 +33,7 @@ const Topdog = () => {
       <TagList tagList={businessList} heading={"Project Type"} />
       <TagList tagList={techList} heading={"Technologies Used"} />
       <div className={"controls"}>
-        <a target="_blank" href="https://ivyukraine.com" className={"button"}>
+        <a target="_blank" href="/topdog" className={"button"}>
           Try it
         </a>
       </div>
