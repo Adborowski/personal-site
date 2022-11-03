@@ -25,7 +25,7 @@ const Map = () => {
 
   return (
     <div className={"main project-page"}>
-      <ProjectHeader content={"Ivy Ukraine"} />
+      <ProjectHeader content={"DI-Map"} />
       <Mockups urls={mockups} />
 
       <section>
