@@ -11,9 +11,10 @@
   text-align: left;
 }
 
-.Hero h2 {
+:global(.main) .Hero h2 {
   margin-top: 18px;
   font-weight: 400;
+  font-family: var(--font-main);
 }
 
 .Hero .highlight {

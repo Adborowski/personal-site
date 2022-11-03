@@ -80,6 +80,11 @@
   margin-bottom: 6px;
 }
 
+.Greeting section span:first-of-type {
+  font-family: var(--font-display);
+  font-size: 20px;
+}
+
 @keyframes flip {
   0% {
     transform: rotate(0deg);
