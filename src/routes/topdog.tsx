@@ -1,5 +1,6 @@
 import TagList from "../components/TagList/TagList";
 import Mockups from "../components/Mockups/Mockups";
+import ProjectHeader from "../components/Projects/ProjectHeader";
 
 const Topdog = () => {
   const techList = [
@@ -9,6 +10,8 @@ const Topdog = () => {
     { label: "HTML", type: "code" },
     { label: "Responsive Web Design", type: "code" },
     { label: "GIT CLI", type: "code" },
+    { label: "jQuery", type: "code" },
+    { label: "PHP+SQL API", type: "code" },
   ];
 
   const businessList = [
@@ -21,7 +24,7 @@ const Topdog = () => {
 
   return (
     <div className={"main project-page"}>
-      <h1>Topdog</h1>
+      <ProjectHeader content={"Topdog"} />
       <Mockups urls={mockups} />
 
       <section>

@@ -8,4 +8,6 @@ git add .
 git commit -m "Auto-deploy"
 git push
 echo "${GREEN}Deployed to production. Code is pulled every minute."
-echo "Available here: http://104.248.246.24/${NORMAL}"
+echo "Available at: http://104.248.246.24/"
+echo "Also at: http://adamborowski.com${NORMAL}"
+

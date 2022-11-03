@@ -131,6 +131,7 @@ h2 {
 
 :global(.main) h1 {
   margin-top: 24px;
+  text-align: center;
 }
 
 :global(.project-page) section {

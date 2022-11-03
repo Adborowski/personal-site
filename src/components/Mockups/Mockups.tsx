@@ -1,6 +1,6 @@
 import styles from "./Mockups.module.css";
 
-const Mockups = ({ urls }: any) => {
+const Mockups = ({ urls, isDesktop }: any) => {
   const mockupElements = urls.map((url: any) => {
     return (
       <div
@@ -11,6 +11,10 @@ const Mockups = ({ urls }: any) => {
     );
   });
 
-  return <div className={styles.mockups}>{mockupElements}</div>;
+  return (
+    <div className={isDesktop == true ? styles.desktopMockups : styles.mockups}>
+      {mockupElements}
+    </div>
+  );
 };
 export default Mockups;

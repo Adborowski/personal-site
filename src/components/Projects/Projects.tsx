@@ -32,7 +32,7 @@ const Projects = () => {
           { label: "Javascript", type: "Code" },
           { label: "HTML", type: "Code" },
         ],
-        route: "centralrental",
+        route: "osiris",
       },
       {
         label: "Ø Academy",

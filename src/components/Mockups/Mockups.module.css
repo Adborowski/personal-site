@@ -5,6 +5,11 @@
   height: 500px;
 }
 
+.desktopMockups {
+  height: 350px;
+  margin: 18px 0px;
+}
+
 .mockupFrame {
   height: 100%;
   background-position: center;
@@ -26,5 +31,11 @@
 
   .mockupFrame:nth-child(1) {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .desktopMockups {
+    height: 400px;
   }
 }

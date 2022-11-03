@@ -1,5 +1,6 @@
 import TagList from "../components/TagList/TagList";
 import Mockups from "../components/Mockups/Mockups";
+import ProjectHeader from "../components/Projects/ProjectHeader";
 
 const IvyUkraine = () => {
   const techList = [
@@ -22,7 +23,7 @@ const IvyUkraine = () => {
 
   return (
     <div className={"main project-page"}>
-      <h1>Ivy Ukraine</h1>
+      <ProjectHeader content={"Ivy Ukraine"} />
       <Mockups urls={mockups} />
 
       <section>

@@ -60,3 +60,17 @@
 .controls {
   margin-top: 12px;
 }
+
+.projectHeader {
+  display: block;
+}
+
+.controlsBackToProjects {
+  margin: auto;
+  margin-top: 12px;
+}
+
+.controlsBackToProjects :global(.button) {
+  margin: auto;
+  padding: 12px;
+}

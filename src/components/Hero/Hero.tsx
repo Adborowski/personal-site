@@ -22,6 +22,8 @@ const Hero = () => {
     { label: "WooCommerce", type: "code" },
     { label: "SQL", type: "code" },
     { label: "CRON", type: "code" },
+    { label: "jQuery", type: "code" },
+    { label: "DNS Basics", type: "code" },
     { label: "Adobe Illustrator", type: "design" },
     { label: "Adobe Photoshop", type: "design" },
     { label: "Adobe After Effects", type: "design" },
@@ -37,6 +39,9 @@ const Hero = () => {
     { label: "Next.js", type: "code" },
     { label: "Headless CMS", type: "code" },
     { label: "Testing Frameworks", type: "code" },
+    { label: "Vue", type: "code" },
+    { label: "Angular", type: "code" },
+    { label: "Svelte", type: "code" },
   ];
   const HeroLinks: any = () => {
     const links = [
