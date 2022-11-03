@@ -36,7 +36,7 @@ const Projects = () => {
         label: "DI-Map",
         image: "map.png",
         description: "Gig economy app prototype for generalized work",
-        route: "centralrental",
+        route: "map",
       },
 
       {
