@@ -134,6 +134,10 @@ h2 {
   text-align: center;
 }
 
+:global(.main) h2 {
+  font-family: var(--font-display);
+}
+
 :global(.project-page) section {
   margin-top: 12px;
   /* max-width: 400px; */
