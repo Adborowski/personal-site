@@ -18,40 +18,24 @@ const Projects = () => {
         label: "Topdog",
         image: "topdog.png",
         description: "Matchmaking app for aspiring dog owners and shelters",
-        technologies: [
-          { label: "Javascript", type: "Code" },
-          { label: "HTML", type: "Code" },
-        ],
         route: "topdog",
       },
       {
         label: "Osiris",
         image: "osiris.png",
         description: "Cybersecurity dashboard for secure data backup",
-        technologies: [
-          { label: "Javascript", type: "Code" },
-          { label: "HTML", type: "Code" },
-        ],
         route: "osiris",
       },
       {
-        label: "Ø Academy",
-        image: "oda.png",
-        description: "Figma-based concept for an internal education app UI",
-        technologies: [
-          { label: "Javascript", type: "Code" },
-          { label: "HTML", type: "Code" },
-        ],
+        label: "Central Rental",
+        image: "central.png",
+        description: "Commercial web app for short-term flat rentals",
         route: "centralrental",
       },
       {
         label: "DI-Map",
         image: "map.png",
         description: "Gig economy app prototype for generalized work",
-        technologies: [
-          { label: "Javascript", type: "Code" },
-          { label: "HTML", type: "Code" },
-        ],
         route: "centralrental",
       },
 
@@ -59,10 +43,6 @@ const Projects = () => {
         label: "Echo",
         image: "echo.png",
         description: "Typewriter-inspired experimental drawing tool",
-        technologies: [
-          { label: "Javascript", type: "Code" },
-          { label: "HTML", type: "Code" },
-        ],
         route: "echo",
       },
     ];

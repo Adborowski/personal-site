@@ -19,7 +19,7 @@ const IvyUkraine = () => {
     { label: "Greenfield", type: "business" },
   ];
 
-  const mockups = ["/mock/phone-ivy1.png", "/mock/phone-ivy3.png"];
+  const mockups = ["/mock/phone-ivy3.png", "/mock/phone-ivy1.png"];
 
   return (
     <div className={"main project-page"}>

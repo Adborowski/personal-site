@@ -20,7 +20,7 @@ const Topdog = () => {
     { label: "Fullstack", type: "business" },
   ];
 
-  const mockups = ["/mock/phone-topdog2.png", "/mock/phone-topdog1.png"];
+  const mockups = ["/mock/phone-topdog1.png", "/mock/phone-topdog2.png"];
 
   return (
     <div className={"main project-page"}>

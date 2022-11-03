@@ -29,7 +29,11 @@
     height: 500px;
   }
 
-  .mockupFrame:nth-child(1) {
+  .desktopMockups {
+    height: 200px;
+  }
+
+  .mockupFrame:nth-child(2) {
     display: none;
   }
 }
