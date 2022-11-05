@@ -5,6 +5,7 @@ import htmlPlugin from "vite-plugin-html-config";
 const htmlPluginOpt = {
   title: "Adam Borowski",
   favicon: "logo.svg",
+  links: [{ rel: "icon", href: "/logo.svg" }],
 };
 
 // https://vitejs.dev/config/
