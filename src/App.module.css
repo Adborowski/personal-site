@@ -1,42 +1,11 @@
 @font-face {
-  font-family: "Nabla";
-  src: url("/Nabla.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Uncut";
   src: url("/Uncut.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Heming";
-  src: url("/Heming.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Oceanus";
-  src: url("/Oceanus.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Suit";
-  src: url("/Suit.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Fraunces";
-  src: url("/Fraunces.woff2") format("woff2");
-  font-variation-settings: "SOFT" 375, "WONK" 88;
-}
-
-@font-face {
   font-family: "Basteleur";
   src: url("/Basteleur.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Seasons";
-  src: url("/Seasons.ttf") format("truetype");
 }
 
 :root {
