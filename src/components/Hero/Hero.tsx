@@ -66,10 +66,10 @@ const Hero = () => {
         Are you ready to build something{" "}
         <span className={styles.highlight}>great?</span>
       </h1>
-      <div className={styles.description}>
+      <h2>
         I have the skills to get your project from idea and pitch to production,
         faster than you think.
-      </div>
+      </h2>
       <div className={styles.heroLinks}>
         <HeroLinks />
       </div>
