@@ -13,6 +13,7 @@ import Osiris from "./routes/osiris";
 import Map from "./routes/map";
 import Echo from "./routes/echo";
 import CentralRental from "./routes/centralrental";
+import LegoRedirect from "./components/LegoRedirect/LegoRedirect";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -29,6 +30,8 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="projects/echo" element={<Echo />} />
           <Route path="projects/centralrental" element={<CentralRental />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="/lego/mysterybox" element={<LegoRedirect />} />
+          <Route path="/lego/checkout" element={<LegoRedirect />} />
         </Routes>
         <Footer />
       </div>
